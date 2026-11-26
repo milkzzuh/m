@@ -1,0 +1,218 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+<title>Image Gallery</title> 
+ 
+<style> 
+body {
+        background-image: url("pii.jpg");
+        background-color: #E0F7FA;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        font-family: "Trebuchet MS", sans-serif;
+        color: #0B4F6C;
+        margin: 0;
+        padding: 20px;
+        
+    }
+
+     h1 {
+        color:  #065A60; 
+        background-color:#F6E8CE; 
+        border: 8px dotted #1ECDCB;  
+        border-radius: 20px;
+        box-shadow: 0 15px 35px rgba(11, 79, 108, 0.25);
+        padding: 15px 25px;
+        font-size: 28px;
+        max-width: 550px;
+        margin: 20px auto 0 auto;
+        text-align: center;
+    }
+ 
+.gallery-container {
+     display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;                
+    gap: 30px;               
+    margin: 50px auto;
+    max-width: 1400px;
+    padding: 25px;
+    background-color: rgba(246, 232, 206, 0.85); 
+    border: 5px dotted #269B4B;     
+    box-shadow: 0 15px 35px rgba(6, 90, 96, 0.2);
+}
+.gallery-container:hover img:not(:hover) {
+    filter: brightness(85%);
+    opacity: 0.8;
+}
+img { 
+  width: 280px; 
+    height: 280px; 
+    object-fit: cover;            
+    border: 6px solid #1ECDCB;    
+    border-radius: 20px;
+    box-shadow: 0 15px 30px rgba(24, 139, 211, 0.35); 
+    position: relative; 
+    transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), 
+    box-shadow 0.4s, 
+    border-color 0.4s,
+    filter 0.3s,
+    opacity 0.3s;
+    z-index: 1;
+    cursor: pointer;
+} 
+img:hover {
+    border-color: #E8A838;          
+    box-shadow: 0 25px 45px rgba(232, 168, 56, 0.55);
+    }
+ .card {
+    background-color: #FFFDF7;     
+    border: 5px solid #1ECDCB;   
+    border-radius: 20px;
+    width: 280px;
+    padding: 15px;
+    box-shadow: 0 15px 30px rgba(24, 139, 211, 0.25);
+    transition: transform 0.35s cubic-bezier(0.175, 0.885, 0.32, 1.275), 
+                box-shadow 0.35s, 
+                border-color 0.35s,
+                filter 0.3s,
+                opacity 0.3s;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.card:hover {
+    transform: scale(1.08);
+    z-index: 10;
+    border-color: #E8A838;
+    box-shadow: 0 25px 45px rgba(232, 168, 56, 0.45);
+}
+
+.card img { 
+    width: 100%; 
+    height: 230px; 
+    object-fit: cover;
+    border-radius: 14px;
+    border-bottom: 4px solid #269B4B;
+} 
+
+.card h2 {
+    color: #065A60;  
+    font-size: 20px;
+    margin: 14px 0 4px 0;
+}
+
+
+.card .location {
+    font-size: 13px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+
+.card p {
+    color: #3A5A6B;
+    font-size: 14px;
+    line-height: 1.5;
+    margin: 0;
+}
+
+ @media (max-width: 700px) {
+    .card {
+        width: 100%;
+        max-width: 340px;
+    }
+}
+
+</style> 
+ 
+</head> 
+<body> 
+ 
+<script> 
+ 
+document.writeln("<h1 align='center'>˚.⋆꒰১TOURIST DESTINATIONS໒꒱⋆.˚</h1>"); 
+ 
+document.writeln("<div class='gallery-container'>"); 
+ 
+ 
+document.writeln("<div class='card'>");
+document.writeln("<img src='https://i.pinimg.com/736x/c6/be/13/c6be130b510db261060a3e584e1ab2aa.jpg' alt='Boracay White Beach'>");
+document.writeln(" <h2>White Beach</h2>");
+document.writeln("  <div class='location'>Boracay, Aklan</div>");
+document.writeln("  <p>Famous for its powdery white sand, iconic sandcastles, calm turquoise waters, and vibrant island sunsets.</p>");
+document.writeln("  <p>Visit for cool powdery white sand, safe shallow swimming, vibrant sunsets, and a clean, lively island vibe suited for every budget.</p>");
+document.writeln("  <div class='highlights'>");
+document.writeln("    <strong>Top Attractions & Activities:</strong>");
+document.writeln("    <ul>");
+document.writeln("      <li><b>Landmarks:</b> Willy's Rock & Stations 1–3</li>");
+document.writeln("      <li><b>Sea & Adventure:</b> Paraw sunset sailing, island hopping & water sports</li>");
+document.writeln("      <li><b>Nightlife:</b> D'Mall dining & fire dancer shows</li>");
+document.writeln("    </ul>");
+document.writeln("  </div>");
+document.writeln("</div>");
+
+document.writeln("<div class='card'>");
+document.writeln("  <img src='https://i.pinimg.com/736x/05/c6/ae/05c6ae3fe6817820e7af88df0891921d.jpg' alt='Kayangan Lake Coron'>");
+document.writeln("  <h2>Kayangan Lake</h2>");
+document.writeln("  <div class='location'>Coron, Palawan</div>");
+document.writeln("  <p>Surrounded by dramatic limestone cliffs, this crystal-clear lagoon offers breathtaking underwater views.</p>");
+document.writeln("  <p>Visit for Asia's cleanest freshwater lagoon, dramatic limestone cliffs, and crystal-clear visibility for swimming and snorkeling.</p>");
+document.writeln("  <div class='highlights'>");
+document.writeln("    <strong>Top Attractions & Activities:</strong>");
+document.writeln("    <ul>");
+document.writeln("      <li><b>Landmarks:</b> Iconic Cliffside Viewdeck</li>");
+document.writeln("      <li><b>Sea & Adventure:</b> Snorkeling, freediving & bamboo raft rides</li>");
+document.writeln("      <li><b>Nearby Spots:</b> Twin Lagoon & Barracuda Lake</li>");
+document.writeln("    </ul>");
+document.writeln("  </div>");
+document.writeln("</div>");
+
+
+document.writeln("<div class='card'>");
+document.writeln("  <img src='https://i.pinimg.com/736x/d0/c9/1a/d0c91af0bc467be04ced0aabe291b8c7.jpg' alt='Chocolate Hills Bohol'>");
+document.writeln("  <h2>Chocolate Hills</h2>");
+document.writeln("  <div class='location'>Carmen, Bohol</div>");
+document.writeln("  <p>Over a thousand symmetrical cone-shaped hills covered in lush green grass that turns chocolate brown in summer.</p>");
+document.writeln("  <p>Visit to see a rare geological wonder of over 1,200 cone-shaped hills that shift from lush green to chocolate brown in summer.</p>");
+document.writeln("  <div class='highlights'>");
+document.writeln("    <strong>Top Attractions & Activities:</strong>");
+document.writeln("    <ul>");
+document.writeln("      <li><b>Landmarks:</b> Carmen Viewing Deck</li>");
+document.writeln("      <li><b>Adventure:</b> ATV hill trail rides & bike zip-lining</li>");
+document.writeln("      <li><b>Nearby Spots:</b> Tarsier Sanctuary & Loboc River</li>");
+document.writeln("    </ul>");
+document.writeln("  </div>");
+document.writeln("</div>");
+
+
+document.writeln("<div class='card'>");
+document.writeln("  <img src='https://i.pinimg.com/736x/d0/83/a9/d083a9df74b377ace4a23e4599128225.jpg' alt='El Nido Lagoons'>");
+document.writeln("  <h2>Big & Small Lagoons</h2>");
+document.writeln("  <div class='location'>El Nido, Palawan</div>");
+document.writeln("  <p>Hidden emerald waters nestled between towering karst formations, ideal for kayaking and island hopping.</p>");
+document.writeln("  <p>Visit to paddle through peaceful emerald waters hidden inside towering marble cliffs and vibrant coral gardens.</p>");
+document.writeln("  <div class='highlights'>");
+document.writeln("    <strong>Top Attractions & Activities:</strong>");
+document.writeln("    <ul>");
+document.writeln("      <li><b>Landmarks:</b> Miniloc Island Karst Cliffs</li>");
+document.writeln("      <li><b>Sea & Adventure:</b> Clear kayaking & snorkeling</li>");
+document.writeln("      <li><b>Nearby Spots:</b> Secret Lagoon & Shimizu Island</li>");
+document.writeln("    </ul>");
+document.writeln("  </div>");
+document.writeln("</div>");
+
+
+
+
+</script> 
+ 
+</body> 
+</html> 

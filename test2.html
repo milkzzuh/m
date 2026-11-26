@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Summative Test #2 Comp</title> 
+</head>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            background-image: url("download.jpg");
+            background-color: #EBF3FA;       
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            font-family: "Trebuchet MS", sans-serif;
+            color: #2D4263;                    
+            margin: 0;
+            padding: 25px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        h1 {
+            color: #FFFDF9;        
+            text-shadow: 0 2px 8px rgba(45, 66, 99, 0.55);
+            background-image: url("yumi.jpg");
+            background-size: cover;
+            background-position: center;
+            background-color: #99C1EB;    
+            border: 8px dotted #FBE8A6;
+            border-radius: 20px;
+            padding: 18px 35px;
+            font-size: 32px;
+            text-align: center;
+            width: 100%;
+            max-width: 750px;
+            margin: 10px auto 20px auto;
+            box-shadow: 0 12px 28px rgba(45, 66, 99, 0.12);
+        }
+
+        .menu {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 18px;
+            flex-wrap: wrap;
+            background-color: rgba(255, 253, 249, 0.94); 
+            border: 4px dotted #EDA5B0; 
+            padding: 14px 25px;
+            border-radius: 20px;
+            width: 100%;
+            max-width: 750px;
+            margin-bottom: 30px;
+            box-shadow: 0 10px 25px rgba(45, 66, 99, 0.1);
+            position: relative;
+            z-index: 100;
+        }
+
+        .menu-item { 
+            position: relative; 
+            display: inline-block; 
+        } 
+        .menu > .menu-item > a {
+            display: inline-block;        
+            background-color: #BFD8F2;   
+            color: #2D4263; 
+            font-weight: bold;
+            text-decoration: none; 
+            padding: 12px 20px;
+            border: 2px solid #99C1EB;
+            border-radius: 15px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.3s ease, border-color 0.3s ease;
+        }
+
+        .menu > .menu-item > a:hover {
+            background-color: #F6C5CC; 
+            border-color: #EDA5B0;
+            transform: translateY(-2px);
+        }
+
+        .submenu { 
+            display: none; 
+            position: absolute; 
+            top: 100%; 
+            left: 0; 
+            min-width: 210px; 
+            background-color: #FFFDF9;  
+            border: 3px dotted #99C1EB;  
+            padding: 8px; 
+            border-radius: 14px; 
+            box-shadow: 0 12px 25px rgba(45, 66, 99, 0.15);
+            z-index: 999; 
+            margin-top: 6px;
+        } 
+
+        .menu-item::after {
+            content: "";
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 100%;
+            height: 10px;
+        }
+
+        .menu-item:hover .submenu { 
+            display: block; 
+        } 
+        .submenu a { 
+            display: block;
+            background-color: #EBF3FA;    
+            color: #2D4263;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: bold;
+            padding: 10px 14px;
+            margin: 5px 0; 
+            border-radius: 10px; 
+            cursor: pointer;
+            transition: transform 0.25s ease, background-color 0.25s ease;
+        } 
+
+   
+        .submenu a:hover { 
+            background-color: #FBE8A6; 
+            transform: translateX(5px); 
+        } 
+
+        .welcome-box {
+            background-color: rgba(255, 253, 249, 0.94); 
+            border: 5px dotted #99C1EB; 
+            border-radius: 25px;
+            padding: 35px 40px;
+            max-width: 750px;
+            width: 100%;
+            text-align: center;
+            box-shadow: 0 15px 35px rgba(45, 66, 99, 0.12);
+        }
+
+        .tagline {
+            display: inline-block;
+            background-color: #FBE8A6;       
+            color: #5A4A28;                
+            font-style: italic;
+            font-weight: bold;
+            font-size: 18px;
+            padding: 8px 20px;
+            border-radius: 12px;
+            border: 2px dashed #EDA5B0;         
+            margin-bottom: 20px;
+        }
+
+        .welcome-box p {
+            font-size: 16px;
+            line-height: 1.7;
+            color: #3A506B;
+            margin: 0;
+        }
+    </style>
+<body>
+
+    <h1>˚.⋆꒰১ Philippine Travel Guide ໒꒱⋆.˚</h1>
+
+<nav class="menu">
+        <div class="menu-item"> 
+            <a >Home</a>
+            <div class="submenu"> 
+                <a >Welcome</a> 
+                <a href="ggmap.html">Featured Destinations</a> 
+            </div> 
+        </div> 
+
+        <div class="menu-item"> 
+            <a>About</a> 
+            <div class="submenu"> 
+                <a href="aboutphil.html">About the Philippines</a> 
+                <a href="culture.html">Our Culture</a> 
+            </div> 
+        </div>
+          
+        <div class="menu-item"> 
+            <a>Gallery</a> 
+            <div class="submenu"> 
+                <a href="tutu.html">Tourist Destinations</a> 
+                <a href="sigh.html">Photo Collection</a>
+            </div>
+        </div> 
+ 
+        <div class="menu-item"> 
+            <a>Contact Us</a> 
+            <div class="submenu"> 
+                <a href="send.html">Send a Message</a> 
+                <a>Our Contact Information</a> 
+            </div> 
+        </div> 
+    </nav>
+
+    <div class="welcome-box">
+        <div class="tagline">"Where every island tells a story"</div>
+        <p>
+            Welcome to the Philippine Travel Guide, where we showcase featured destinations, popular tourist spots, and the rich heritage of the Philippines and its culture. Explore its location, geographical wonders, and the warmth and hospitality of its people. This website ensures you stay inspired and informed on your island journey.
+        </p>
+    </div>
+
+</body>
+</html>

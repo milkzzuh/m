@@ -1,0 +1,144 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+    <title>Featured Destinations</title> 
+ </head>
+   <style> 
+        * {
+            box-sizing: border-box;
+        }
+
+        body { 
+            background-image: url("pi.png");
+            background-color: #E0F7FA;
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            font-family: "Trebuchet MS", sans-serif;
+            color: #0B4F6C;
+            margin: 0;
+            padding: 20px;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        } 
+ 
+        h1 { 
+            color: #065A60;              
+            background-color: #F6E8CE;      
+            border: 8px dotted #1ECDCB;    
+            border-radius: 20px;
+            box-shadow: 0 15px 35px rgba(11, 79, 108, 0.25);
+            padding: 15px 25px;
+            font-size: 28px;
+            width: 100%;
+            max-width: 550px;
+            margin: 0 auto 15px auto;
+        } 
+
+        h2 {
+            color: #269B4B;                
+            background-color: #FFFDF7;     
+            border: 4px solid #1ECDCB;
+            border-radius: 15px;
+            padding: 8px 22px;
+            font-size: 18px;
+            margin: 0 auto 25px auto;
+            box-shadow: 0 8px 20px rgba(6, 90, 96, 0.15);
+        }
+
+        .map-container {
+            background-color: rgba(246, 232, 206, 0.88);
+            border: 5px dotted #269B4B;
+            border-radius: 25px;
+            width: 100%;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 30px;
+            box-shadow: 0 15px 35px rgba(6, 90, 96, 0.2);
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+ 
+        iframe { 
+            display: block;
+            margin: 0 auto;
+            width: 100%;
+            max-width: 700px;
+            height: 420px;
+            border: 6px solid #1ECDCB !important;
+            border-radius: 20px;
+            box-shadow: 0 15px 35px rgba(24, 139, 211, 0.35);
+            background-color: #FFFDF7;
+        } 
+
+
+        .button-group {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-top: 25px;
+            width: 100%;
+            max-width: 700px;
+        }
+ 
+        button { 
+            padding: 12px 20px; 
+            background-color: #065A60;      
+            color: #FFFDF7;                 
+            border: 3px solid #1ECDCB;      
+            font-family: "Trebuchet MS", sans-serif;
+            font-size: 13.5px;
+            font-weight: bold;
+            letter-spacing: 0.5px;
+            cursor: pointer; 
+            border-radius: 15px; 
+            box-shadow: 0 8px 18px rgba(6, 90, 96, 0.25);
+            transition: transform 0.25s ease, background-color 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+        } 
+ 
+        button:hover { 
+            background-color: #E8A838;     
+            color: #065A60;
+            border-color: #269B4B;          
+            transform: translateY(-3px) scale(1.04);
+            box-shadow: 0 12px 24px rgba(232, 168, 56, 0.45);
+        }
+
+        button:active {
+            transform: scale(0.98);
+        }
+
+        @media (max-width: 600px) {
+            iframe {
+                height: 300px;
+            }
+            button {
+                width: 100%;
+                text-align: left;
+            }
+        }
+    </style> 
+<script>
+     document.writeln("<h1>˚.⋆꒰১ MY GOOGLE MAP ໒꒱⋆.˚</h1>");
+    document.writeln("<div><h2>Philippine Featured Destinations</h2></div>");
+
+    document.writeln("<div class='map-container'>");
+
+    document.writeln("<iframe id='googlemap' src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d250473.0918868494!2d119.40300599999998!3d11.21409705!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33b65515ef5c9e0f%3A0xfc4e665b599b0455!2sEl%20Nido%2C%20Palawan!5e0!3m2!1sen!2sph!4v1794450566893!5m2!1sen!2sph' width='600' height='400' style='border:0;' allowfullscreen='' loading='lazy'></iframe>");
+    document.writeln("<br><br>");
+
+    document.writeln("<button onclick=\"document.getElementById('googlemap').src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d250473.0918868494!2d119.40300599999998!3d11.21409705!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33b65515ef5c9e0f%3A0xfc4e665b599b0455!2sEl%20Nido%2C%20Palawan!5e0!3m2!1sen!2sph!4v1794450566893!5m2!1sen!2sph'\">EL NIDO, PALAWAN</button>");
+    document.writeln("<button onclick=\"document.getElementById('googlemap').src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62449.20601520605!2d121.92722905000001!3d11.969283149999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33a53c2f324b4ee7%3A0xa738e81e5e6dda36!2sBoracay!5e0!3m2!1sen!2sph!4v1794450871941!5m2!1sen!2sph'\">BORACAY</button>");
+    document.writeln("<button onclick=\"document.getElementById('googlemap').src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15724.983378269208!2d124.12935440369976!3d9.829707643624046!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33aa3da1a65d72f7%3A0xd89c856a3307dd67!2sChocolate%20Hills!5e0!3m2!1sen!2sph!4v1794450919323!5m2!1sen!2sph'\">CHOCOLATE HILLS, BOHOL</button>");
+    document.writeln("<button onclick=\"document.getElementById('googlemap').src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15534.117082082234!2d123.67579120438295!3d13.25483154253172!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33a1a9954fa1731f%3A0xdff71d3eddd0ea0d!2sMayon%20Volcano!5e0!3m2!1sen!2sph!4v1794450947529!5m2!1sen!2sph'\">MAYON VOLCANO, ALBAY</button>");
+</script>
+</body> 
+</html>
